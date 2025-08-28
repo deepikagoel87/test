@@ -1,0 +1,140 @@
+
+<div id="b-stepp-1" class="step-content-item js-step-content-item" style="width: 1200px;">
+     <h1 class="build_step_1-h1">Design your Own Luxury Gift</h1>
+
+<img src="//blackbowgiftco.ca/cdn/shop/t/68/assets/dyo-process.svg?v=130249604654992880541753824282" class="build_step_1-large_img" width="1200" height="423" alt="Box">
+
+<div class="build_step_1-instructions">
+     <div class="build_step_1-high_col">
+         <img src="//blackbowgiftco.ca/cdn/shop/t/68/assets/dyo-process-01.svg?v=144907624181893837521753824280" width="144" height="161" class="build_step_1-mobile_img" alt="Choose Your Gift Custom Packaging">
+          <h3>Choose Your Gift Packaging</h3>
+           <p>Select the packaging you'd like us to artistically display your gift items in. These are our most premium packaging options and our gift boxes double as a keepsake for your recipient! Each selection highlights the recommended number of items you'll be able to select.</p>
+        </div>
+         <div>
+             <img src="//blackbowgiftco.ca/cdn/shop/t/68/assets/dyo-process-02.svg?v=77082309218152894801753824280" width="144" height="161" class="build_step_1-mobile_img" alt="Select Your Own Gift Items">
+              <h3>Select Your Gift Items</h3> <p>Select from over 600 unique and thoughtfully sourced gift items to best suit your recipient and occasion. Search by colour or category and monitor your budget as you build your gift.</p>
+            </div>
+             <div class="build_step_1-high_col"> 
+                <img src="//blackbowgiftco.ca/cdn/shop/t/68/assets/dyo-process-03.svg?v=137848152699810439501753824280" width="144" height="161" class="build_step_1-mobile_img" alt="Add Your Details for your Design Your Own Gift"> <h3>Add Your Details</h3> <p>Select your card and provide us with your personalized message that will be handwritten by our team. Also choose from our selection of premium ribbon colours or belly band option to be used on your gift.</p></div> <div> <img src="//blackbowgiftco.ca/cdn/shop/t/68/assets/dyo-process-04.svg?v=48038463023252521321753824281" width="144" height="161" class="build_step_1-mobile_img" alt="Choose when you'd like your gift ready"> <h3>Choose Your Ready Date</h3> <p>Select how quickly you'd like us to make your gift: ASAP, Rush, or a Future Ready Date. You can select 'Multi-Ship' in the 'View Cart' page to deliver gifts to different locations in the same order.  Your delivery method and other delivery/shipping details are collected at checkout.</p></div> <div class="build_step_1-high_col"> <img src="//blackbowgiftco.ca/cdn/shop/t/68/assets/dyo-process-05.svg?v=115921562872599366071753824281" width="144" height="185" class="build_step_1-mobile_img" alt="Wait for your gift to arrive"> <h3>Sit Back and Relax!</h3> <p>You designed the perfect gift! Our team will work hard to  make you look amazing by artistically displaying and accenting your gift to make a one-of-a-kind creation for your recipient. If you selected a gift box, we'll even send you a photo of your gift for you to see! 📸</p></div>
+</div>
+
+<p class="build_step_1-note">Special Note: You can edit your gift and go backwards and forwards through the process by clicking on the steps at the top of the page. Once your gift design is complete in the final step you cannot edit your gift and any changes would require starting a new gift design.</p>
+
+<style>
+  .build_step_1-h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .build_step_1-instructions {
+    display: grid;
+    max-width: 30rem;
+    row-gap: 3rem;
+    margin: 1rem auto;
+    padding: 0 1rem;
+  }
+  @media (min-width: 1280px) {
+    .build_step_1-instructions {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      column-gap: 3rem;
+      max-width: none;
+      margin-top: 1rem;
+      padding: 0;
+    }
+    .build_step_1-high_col {
+      margin-top: -10rem;
+    }
+  }
+  .build_step_1-instructions h3 {
+    font-size: 0.9rem;
+    color: #000;
+    font-family: 'Montserrat SemiBold', sans-serif;
+  }
+  .build_step_1-large_img {
+    display: none;
+    height: auto;
+    max-width: 100%;
+  }
+  .build_step_1-mobile_img {
+    height: auto;
+    max-width: 100%;
+    width: 9rem;
+  }
+  @media (min-width: 1280px) {
+    .build_step_1-mobile_img {
+      display: none;
+    }
+    .build_step_1-large_img {
+      display: inline;
+    }
+  }
+  .build_step_1-note {
+    max-width: 50rem;
+    margin: 1rem auto;
+  }
+</style>
+
+<div class="wrap_content_step1 custome-blackstep"> 
+    <h5 class="hdg hdg_2 pushBtm20 pagecustom-heading">
+        <p class="italic_hd">Select your</p>Package/Box</h5>
+         <input type="hidden" name="box_id" value="2134281814070-30309990826038" id="selected_box_11"> 
+         <input type="hidden" name="box_capacity" value="4-7" id="selected_box_capacity_11"> 
+         <input type="hidden" name="box_weight" value="1200" id="selected_box_weight_capacity_11">
+          <input type="hidden" name="box_variant_name" value="Large Box - Kraft" id="selected_variant_name">
+           <ul class="create-box custom_flex-prbox"> 
+            {% assign collection = section.settings.collection %}
+            {% for product in collection.products %}
+            <!-- Large Box --> 
+  <li class="main-parent" data-attr="{{product.title}}" data-product-name="{{product.title}}" data-box-id="{{product.id}}" data-product-img="{{ product.featured_image | image_url: '600x600' | image_tag: product.featured_image.alt }}" data-pureprice="{{product.price}}" data-price="{{product.price |money}}" data-capacity="{{product.title}}" data-productweight="0">
+     <figure>
+         <img src='{{ product.featured_image | image_url }}' width="400"
+  height="400"  alt="{{product.title}}">
+        </figure>
+          <span class="shop-now flex-prbox_name">{{product.title}}</span>
+           <div class="sub-items"> 
+            <ul> 
+                {% if product.has_only_default_variant %}
+                    <li class="sub-item-listing" data-product-name="{{product.title}}" data-box-id="{{product.id}}" data-product-img="{{ product.featured_image | image_url: width: 100, height: 100, crop: 'center' }}" data-pureprice="{{product.price}}" data-price="{{product.price|money}}" data-capacity="4-7" data-productweight="0"> 
+<figure>
+     <img src="{{ product.featured_image | image_url: width: 100, height: 100, crop: 'center' }}" 
+      alt="{{ product.title }}"  width="100" height="100"
+      style="width:50px; height:50px; object-fit:cover;"></figure>
+      <span class="shop-now">{{product.title}}<br>{{product.price|money}}<br>(4-7 items)</span>
+    </li>  
+                {% else %}
+                {% for variant in product.variants %}
+<li class="" data-product-name="{{product.title | append: "-"}}{{ variant.title }}" data-box-id="{{product.id}}" data-product-img="{{ product.featured_image | image_url: width: 100, height: 100, crop: 'center' }}" data-pureprice="{{product.price}}" data-price="{{variant.price | money}}" data-capacity="4-7" data-productweight="0"> 
+<figure>
+     <img  src="{{ variant.image | image_url: width: 100, height: 100, crop: 'center' }}" 
+      alt="{{ variant.title }}"  width="100" height="100"
+      style="width:50px; height:50px; object-fit:cover;">
+    </figure>
+      <span class="shop-now">{{variant.title}}<br>{{variant.price|money}}<br>(4-7 items)</span>
+    </li>  
+              {% endfor %}  
+            {% endif %}  
+                
+</ul></div>
+</li>
+{% endfor %}
+</ul></div></div>
+
+{% schema %}
+{
+  "name": "Build Box Packaging",
+  "tag": "section",
+  "class": "section slider_container_cover page-width section-step-1",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Select Collection"
+    }
+]
+}
+{% endschema %}

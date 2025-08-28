@@ -1,0 +1,37 @@
+<div id="b-stepp-4" class="step-content-item js-step-content-item" style="width: 1200px;">
+                
+<div class="wrap wrap_content custome-blackstep"> 
+    <h2 class="hdg hdg_2 pushBtm20 pagecustom-heading"><p class="italic_hd">Select</p>Your Accent</h2>
+     <p class="lite-summary">Choose your favorite accent and don’t worry about the tag and gift filler matching – we always pick out the best pairings for your gift!</p> <div class="collection_ribbons_container"> <input type="hidden" name="ribbon_id" id="selected_ribbon_id_11" value=""> 
+     <ul class="create-box custom_flex-prbox custom_flex-prbox_33">
+                    {% assign collection = section.settings.collection %}
+                    {% for product in collection.products %}        
+         <li class="steps_Products-rutt" data-pureprice="000" data-price="0.00" data-id="2134278864950" data-product-img="//blackbowgiftco.ca/cdn/shop/products/WhiteBlackEuc2021_medium.png?v=1632760242" data-product-name="Black Ribbon" data-productweight="0">
+             <img src='{{ product.featured_image | image_url }}' width="400"
+  height="400"  alt="{{product.title}}">
+             <span class="shop-now step_pr_names">Black Ribbon</span>
+              <p class="product__price_Cards step_pr_price">$0.00</p>
+            </li> 
+        {% endfor %}
+        </ul>
+    </div> 
+    <button type="button" class="modal-card_img_view__btn addToCart step-blk_cutbtn">Next Step</button>
+</div></div>
+
+{% schema %}
+{
+  "name": "Build Box Accent",
+  "tag": "section",
+  "class": "section slider_container_cover page-width step-list-custom",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Select Collection"
+    }
+]
+}
+{% endschema %}

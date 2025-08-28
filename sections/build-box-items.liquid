@@ -1,0 +1,61 @@
+
+{% render 'currency-formate' %}
+<div id="b-stepp-2" class="step-content-item js-step-content-item" style="width: 1200px;"> <div class="wrap_content_step2 custome-blackstep"> <h2 class="hdg hdg_2 pushBtm20 pagecustom-heading"><p class="italic_hd">Choose</p>Your Items</h2> <p class="lite-summary">
+    Choose from the items below and click “ADD TO BOX” to include them in your gift. You can filter items by category or colour, or sort by price for easy searching! Our Mini Box holds 2-3 items, Large Box 4-7 items, Wood Box 6-9 items, and you can add unlimited items when selecting a linen tote. We can’t wait to see what you design!</p> <div class="step_2container"> <div class="product_container"> <input type="hidden" value="2134282141750-20526714617910,8933831246109-3," name="box_product_ids" id="box_product_ids"> <ul class="prod_list add_costom-cart">
+      <li class="package-name">
+        <a href="javascript:void(0)" data-id="2134282141750-20526714617910" data-pureprice="2500">
+        <img src="//blackbowgiftco.ca/cdn/shop/products/3_75356e9b-6e04-4070-993a-121940848ed4_small.png?v=1633710470" title="Mini Box - Kraft"></a>
+      </li>
+    </ul></div> 
+    
+        <div class="p_title_list pcc_subbox">
+           <h4 class="list-title ppc_subtitle">Box Contents</h4>
+            <ul class="list-items"></ul> <div class="list-box-size"> <a> <span class="label">Current Box Detail</span></a></div>
+                 <div class="list-subtotal suv_producwer cofn_steppr-box">
+                   <span class="label">Box Subtotal</span> <span class="subtotal">$145.00</span> 
+                   <a id="complete-box" class="checkout-button btn btn--full" href="javascript:void(0);">Next Step</a></div></div></div> 
+                   <div class="filtersarea cutomestep_2_formfileds"> 
+                    <div class="filterselect" id="filter1"> <select data-heading="Category" id="filterselect1" class="filterselectinner"> <option value="showall">Category</option> <option value="New Arrivals">New Arrivals</option> <option value="Sales">Sales</option> <option value="Canadian Sourced">Canadian Sourced</option> <option value="Maritime Sourced">Maritime Sourced</option> <option value="Accessories-Wearables">Accessories &amp; Wearables</option> <option value="Alcohol-Mixers">Alcohol &amp; Mixers</option> <option value="Animal Lovers">Animal Lovers</option> <option value="Beauty-Grooming-Wellness">Beauty &amp; Grooming &amp; Wellness</option> <option value="Birthdays-Celebrations-Weddings">Birthdays &amp; Celebrations &amp; Weddings</option> <option value="Books-Stationery">Books &amp; Stationery</option> <option value="Candles-Scents">Candles &amp; Scents</option> <option value="Coffee-Tea">Coffee &amp; Tea</option> <option value="Decorative Home">Decorative Home</option> <option value="For Her">For Her</option> <option value="For Him">For Him</option> <option value="Games-Hobbies">Games &amp; Hobbies</option> <option value="Glassware">Glassware</option> <option value="Kitchen-Bar Tools">Kitchen-Bar Tools</option> <option value="Mugs-Tumblers">Mugs &amp; Tumblers</option> <option value="Parents-Baby">Parents &amp; Baby</option> <option value="Treats-Savouries">Treats &amp; Savouries</option></select></div> <div class="filterselect" id="filter2"> <select data-heading="Color" id="filterselect2" class="filterselectinner"> <option value="showall">Color</option> <option value="Black">Black</option> <option value="Blue">Blue</option> <option value="Copper &amp; Orange">Copper &amp; Orange</option> <option value="Gold &amp; Yellow">Gold &amp; Yellow</option> <option value="Grey &amp; Silver">Grey &amp; Silver</option> <option value="Green">Green</option> <option value="Neutral">Neutral</option> <option value="Pink">Pink</option> <option value="Purple">Purple</option> <option value="Red">Red</option> <option value="White">White</option></select></div> <div class="filterselect" id="filter3"> <select data-heading="Sort" id="filterselect3" class="filterselectinner"> <option value="showall">Sort</option> <option value="Price : high to low">Price : high to low</option> <option value="Price : low to high">Price : low to high</option></select></div></div>  <div class="collection_Prod_container"> 
+        <ul class="create-box custom_flex-prbox custom_flex-prbox_22 js-product_list"> 
+	{% assign collection = section.settings.collection %}
+        {% for product in collection.products %}
+	<li data-pureprice="1000" data-price="10" data-id="{{product.id}}" data-product-img="https://cdn.shopify.com/s/files/1/0141/8998/5846/files/StripedFishDish-Small.jpg?v=1752675625" data-product-name="Striped Fish Dish" data-alltags="All Products,box products,Canadian Sourced,Kitchen-Bar Tools,Market,New Arrivals,White,showall" data-sort="1000" data-weight="400" class="showproduct"> <div class="prooodescription" style="display:none;"><p><meta charset="utf-8">Have some fun dishing out your favourite flavours with the help of this colourful Small Striped Fish Dish. This stoneware fish-shaped dish features a unique array of colours and details to accent anything you serve.<br></p>
+<p><span >This product is proudly sourced from a Canadian company.&nbsp;🇨🇦</span></p></div>
+<figure> 
+     <img src='{{ product.featured_image | image_url }}' width="400"
+  height="400"  alt="{{product.title}}">
+        <div class="controls custome-addto cart"> <div class="blackbow-buy-buttons" data-id="{{product.id}}"> <div class="buy-button single"> <span class="btn btn--large btn--full btn--clear AddtoBox" data-pureprice="{{product.price}}" data-price="{{ product.price | money }}" data-id="{{product.id}}" data-product-name="{{product.title}}" data-product-img="{{ product.featured_image | image_url }}" data-productweight="400" data-stock="6">
+                  Add to Box</span></div></div></div> <a class="infomation_p" href="javascript:void(0);" data-id="{{product.id}}"> <i class="fa fa-info" aria-hidden="true"></i></a></figure>
+<div class="product__infor__box steps_Products-rutt"> <p class="product__name step_pr_names">{{product.title}}</p> 
+<p class="product__price step_pr_price">{{product.price|money}}</p>
+<div class="controls custome-addto cart" style="display: none;">
+     <div class="blackbow-buy-buttons" data-id="{{product.id}}">
+         <div class="buy-button single"> 
+            <span class="btn btn--large btn--full btn--clear AddtoBox" data-pureprice="{{product.price}}" data-price="{{ product.price|money }}" data-id="{{product.id}}" data-product-img="{{ product.featured_image | image_url }}" data-product-name="{{product.title}}">
+                  Add to Box - <span class="product__price">{{product.price|money}}</span>
+                </span>
+                </div>
+                </div>
+                </div>
+                </div>
+                </li>
+{% endfor %}
+                </ul> <div id="noproffound" style="display:none;">Oh no! It looks like there aren't any items that match your filters.</div></div>
+</div></div>
+{% schema %}
+{
+  "name": "Build Box Items",
+  "tag": "section",
+  "class": "section slider_container_cover page-width step-list-custom section-step-2",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Select Collection"
+    }
+]
+}
+{% endschema %}

@@ -1,0 +1,107 @@
+<div class="step js-step custome-str"> 
+    <!-- STEP TRIGGERS --> 
+    <ul class="step-trigger js-step-trigger cutome0-steppoints">
+         <li class="step-li-1 isActive" style="display: inline-block;width: 15.5%;">
+             <a href="#" class="js-step-trigger-1 isActive" data-index="0"> 
+                <div class="step-count_border"><div class="step-counts">01</div></div> 
+                <div class="label">Step 1 of 5</div> <div class="description">Packaging</div>
+            </a>
+        </li> 
+        <li class="step-li-2" style="display: inline-block;width: 15.5%;"> 
+            <a href="#" class="js-step-trigger-2" data-index="1"> 
+                <div class="step-count_border"><div class="step-counts">02</div></div> 
+                <div class="label">Step 2 of 5</div> <div class="description">Items</div>
+            </a>
+        </li> 
+        <li class="step-li-3" style="display: inline-block;width: 15.5%;">
+             <a href="#" class="js-step-trigger-3" data-index="2">
+                 <div class="step-count_border"><div class="step-counts">03</div></div> 
+                 <div class="label">Step 3 of 5</div> <div class="description">Card</div>
+                </a>
+            </li>
+             <li class="step-li-4" style="display: inline-block;width: 15.5%;"> 
+                <a href="#" class="js-step-trigger-4" data-index="3"> 
+                    <div class="step-count_border">
+                        <div class="step-counts">04</div></div>
+                         <div class="label">Step 4 of 5</div> <div class="description">Accent</div>
+                        </a>
+                    </li>
+                     <li class="step-li-45" style="display: inline-block;width: 15.5%;"> 
+                        <a href="#" class="js-step-trigger-45" data-index="3.5"> 
+                            <div class="step-count_border"><div class="step-counts">05</div></div>
+                             <div class="label">Step 5 of 5</div> <div class="description">Shipping</div>
+                            </a>
+                        </li> 
+                        <li class="step-li-5" style="display: inline-block;width: 15.5%;">
+                             <a href="#" class="js-step-trigger-5" data-index="4">
+                                <div class="step-count_border"><div class="step-counts">06</div></div> 
+                                <div class="label">DONE!</div> <div class="description">Thank you</div>
+                            </a>
+                        </li>
+                    </ul> <!-- STEP CONTENT --> 
+<style>
+  .build_step_1-h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .build_step_1-instructions {
+    display: grid;
+    max-width: 30rem;
+    row-gap: 3rem;
+    margin: 1rem auto;
+    padding: 0 1rem;
+  }
+  @media (min-width: 1280px) {
+    .build_step_1-instructions {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      column-gap: 3rem;
+      max-width: none;
+      margin-top: 1rem;
+      padding: 0;
+    }
+    .build_step_1-high_col {
+      margin-top: -10rem;
+    }
+  }
+  .build_step_1-instructions h3 {
+    font-size: 0.9rem;
+    color: #000;
+    font-family: 'Montserrat SemiBold', sans-serif;
+  }
+  .build_step_1-large_img {
+    display: none;
+    height: auto;
+    max-width: 100%;
+  }
+  .build_step_1-mobile_img {
+    height: auto;
+    max-width: 100%;
+    width: 9rem;
+  }
+  @media (min-width: 1280px) {
+    .build_step_1-mobile_img {
+      display: none;
+    }
+    .build_step_1-large_img {
+      display: inline;
+    }
+  }
+  .build_step_1-note {
+    max-width: 50rem;
+    margin: 1rem auto;
+  }
+</style>
+</div>
+{% schema %}
+{
+  "name": "Build Box Step",
+  "tag": "section",
+  "class": "section page-width",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  }
+}
+{% endschema %}

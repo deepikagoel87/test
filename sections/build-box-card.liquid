@@ -1,0 +1,39 @@
+<div id="b-stepp-3" class="step-content-item js-step-content-item" style="width: 1200px;">
+                
+
+<div class="wrap wrap_content custome-blackstep"> <h2 class="hdg hdg_2 pushBtm20 pagecustom-heading"><p class="italic_hd">Select</p>Your Card</h2> <p class="lite-summary">Choose the perfect card from our selection of custom designs. We handwrite each and every
+        note in our best penmanship to keep your gifts feeling personal.</p> <div class="card_view_container" style="display: none;"> <div class="card_img_view cutop_step3_part2"> <div class="view_card_left"> <input type="hidden" name="card_id" id="selected_card_id_11" value="2137410469942"> <figure class="step_3_part_2_img"><img src="//blackbowgiftco.ca/cdn/shop/products/4x6Cards_Thnkingofyou_medium.jpg?v=1619372959"></figure> <span class="change_card_11">(Change Card)</span></div> <div class="view_card_right"> <div class="message-column"> <div class="line-item-property__field"> <input type="hidden" name="card_blank" value="No"> <label class="lite-summary" for="leave-card-blank"> <input id="leave-card-blank" type="checkbox" name="card_blank" value="Yes">
+                            Leave Card Blank</label></div> <div id="to-from-message"> <div class="top"> <div class="left1"> <label class="lite-summary" for="card_to">To</label> <input id="card_to" type="text" name="card_to" required=""></div> <div class="right1"> <label class="lite-summary" for="card_from">From</label> <input id="card_from" type="text" name="card_from" required=""></div></div> <label class="lite-summary" for="message_on_card_11">Message on Card</label> <textarea id="message_on_card_11" name="message" rows="7" cols="35" maxlength="250" class="" required=""></textarea></div></div> 
+                            <button type="button" class="select_card_add_btn  next__level step-blk_cutbtn">Next</button>
+            </div></div></div> 
+            <div class="collection_cards_container" style=""> 
+                <ul class="create-box custom_flex-prbox custom_flex-prbox_33">
+                    {% assign collection = section.settings.collection %}
+                    {% for product in collection.products %}
+                    <li class="steps_Products-rutt" data-pureprice="000" data-price="0.00" data-id="2137264816182" data-product-img="//blackbowgiftco.ca/cdn/shop/products/4x6Cards_YAY_medium.jpg?v=1619372011" data-product-name="Yay!" data-productweight="0"> 
+                    <img src='{{ product.featured_image | image_url }}' width="400"
+  height="400"  alt="{{product.title}}">
+                    <span class="shop-now step_pr_names">{{product.title}}</span>
+                     <p class="product__price_Cards step_pr_price">{{product.price|money}}</p>
+                    </li>
+                {% endfor %}
+            </ul></div>
+</div></div>
+
+{% schema %}
+{
+  "name": "Build Box Card",
+  "tag": "section",
+  "class": "section slider_container_cover page-width step-list-custom",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Select Collection"
+    }
+]
+}
+{% endschema %}
